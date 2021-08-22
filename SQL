@@ -1,0 +1,44 @@
+1. Creat table
+create table student  ( Sno char(5) not null unique,
+                        Sname char(20) unique,
+                        Ssex char(1),
+                        Sage int,
+                        Sdept char(15));
+                        
+2. Alter table
+alert table student add Scome date;
+alert table student modify Sage smallint;
+alert table student drop unique(Sname);
+
+3. Drop table
+drop table student
+
+4. Select
+SELECT column_name,column_name
+FROM table_name;
+
+SELECT * FROM table_name;
+
+5. Where
+SELECT column_name,column_name
+FROM table_name
+WHERE column_name operator value (and/or column_name operator value);
+(The operator could be =, <>, >, <, >=, <=, BETWEEN, LIKE, IN)
+
+6. Order by
+SELECT column_name,column_name
+FROM table_name
+ORDER BY column_name,column_name ASC|DESC;
+
+7. Insert
+INSERT INTO table_name (column1,column2,column3,...)
+VALUES (value1,value2,value3,...);
+
+8. Update
+UPDATE table_name
+SET column1=value1,column2=value2,...
+WHERE some_column=some_value;
+
+9. Delete
+DELETE FROM table_name
+WHERE some_column=some_value;
